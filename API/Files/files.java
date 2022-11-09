@@ -1,10 +1,9 @@
 package API.Files;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.FileNotFoundException;
 
-public class file {
+public class files {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("test.txt");
         PrintWriter pw = new PrintWriter(file);
