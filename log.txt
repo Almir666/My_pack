@@ -1,0 +1,4 @@
+нояб. 09, 2022 11:22:14 PM API.Logger.logger main
+WARNING: Тестовое логирование 1
+нояб. 09, 2022 11:22:14 PM API.Logger.logger main
+INFO: Тестовое логирование 2
