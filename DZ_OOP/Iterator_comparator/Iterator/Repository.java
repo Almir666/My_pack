@@ -1,4 +1,4 @@
-package homeWork.Iterator;
+package DZ_OOP.Iterator_comparator.Iterator;
 
 public class Repository {
     private CatsFlock flock;

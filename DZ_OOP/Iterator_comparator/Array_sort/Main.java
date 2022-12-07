@@ -1,4 +1,4 @@
-package homeWork.Array_sort;
+package DZ_OOP.Iterator_comparator.Array_sort;
 
 public class Main {
     public static void main(String[] args) {

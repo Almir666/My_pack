@@ -1,4 +1,4 @@
-package homeWork.Tree;
+package DZ_OOP.Tree;
 
 public class Main {
     public static void main(String[] args) {

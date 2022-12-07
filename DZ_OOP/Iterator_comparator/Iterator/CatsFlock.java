@@ -1,4 +1,4 @@
-package homeWork.Iterator;
+package DZ_OOP.Iterator_comparator.Iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
