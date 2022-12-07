@@ -1,6 +1,6 @@
 package test.Lesson_5_OOP.Calc;
 
-public interface Model {
+public abstract interface Model {
     int result();
 
     void setX(int value);
