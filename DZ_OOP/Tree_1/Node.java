@@ -1,4 +1,4 @@
-package DZ_OOP.Tree;
+package DZ_OOP.Tree_1;
 
 public class Node {
     Person p1;

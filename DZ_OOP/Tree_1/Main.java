@@ -1,4 +1,4 @@
-package DZ_OOP.Tree;
+package DZ_OOP.Tree_1;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,11 +16,11 @@ public class Main {
         gt.append(sveta, Human.link.sister, Human.link.sister, eva);
 
         System.out.println();
-        System.out.println("Тут мы ищем всех сестер и братьев Светланы:");
+        System.out.println("Тут мы ищем всех сестер Светланы:");
         System.out.println(new Search(gt).spend(sveta, Human.link.sister));
         System.out.println();
         System.out.println("Тут мы ищем всех детей светланы");
-        System.out.println(new Search(gt).spend(sveta, Human.link.parent));
+        System.out.println(new Search(gt).spend(sveta, Human.link.child));
 
     }
 }
