@@ -1,6 +1,6 @@
-package test.Lesson_5_OOP.Calc;
+package DZ_OOP.Calc;
 
-public class Rsum_model extends Ration_model{
+public class Mult_model extends Calc_model{
     @Override
     public void setX(int value) {
         super.x = value;
@@ -11,7 +11,6 @@ public class Rsum_model extends Ration_model{
     }
     @Override
     public int result() {
-        // TODO Auto-generated method stub
-        return 0;
+        return x * y;
     }
 }

@@ -2,11 +2,11 @@ package DZ_OOP.Tree_1;
 
 public class Main {
     public static void main(String[] args) {
-        var sveta = new Person("Svetlana");
-        var artem = new Person("Artemyi");
-        var sasha = new Person("Alexandra");
-        var eva = new Person("Eva");
-        var serg = new Person("Sergey");
+        var sveta = new Person<Integer>("Svetlana", 1);
+        var artem = new Person<Integer>("Artemyi", 2);
+        var sasha = new Person<Integer>("Alexandra", 3);
+        var eva = new Person<Integer>("Eva", 4);
+        var serg = new Person<Integer>("Sergey", 5);
 
         GeoTree gt = new GeoTree();
 
@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println();
         System.out.println("Тут мы ищем всех сестер Светланы:");
-        System.out.println(new Search(gt).spend(sveta, Human.link.sister));
+        System.out.println(new Search(gt).spend(sveta, Human.link.brother));
         System.out.println();
         System.out.println("Тут мы ищем всех детей светланы");
         System.out.println(new Search(gt).spend(sveta, Human.link.child));

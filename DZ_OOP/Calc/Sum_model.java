@@ -1,6 +1,11 @@
-package test.Lesson_5_OOP.Calc;
+package DZ_OOP.Calc;
 
-public class Mult_model extends Calc_model{
+public class Sum_model extends Calc_model {
+
+    @Override
+    public int result() {
+        return x + y;
+    }
     @Override
     public void setX(int value) {
         super.x = value;
@@ -8,9 +13,5 @@ public class Mult_model extends Calc_model{
     @Override
     public void setY(int value) {
         super.y = value;
-    }
-    @Override
-    public int result() {
-        return x * y;
     }
 }

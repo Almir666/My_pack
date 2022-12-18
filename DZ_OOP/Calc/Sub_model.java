@@ -1,6 +1,6 @@
-package test.Lesson_5_OOP.Calc;
+package DZ_OOP.Calc;
 
-public class Div_model extends Calc_model{
+public class Sub_model extends Calc_model{
     @Override
     public void setX(int value) {
         super.x = value;
@@ -11,6 +11,6 @@ public class Div_model extends Calc_model{
     }
     @Override
     public int result() {
-        return x / y;
+        return x - y;
     }
 }

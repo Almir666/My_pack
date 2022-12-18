@@ -1,4 +1,4 @@
-package test.Lesson_5_OOP.Calc;
+package DZ_OOP.Calc;
 
 public class Main {
     public static void main(String[] args) {
