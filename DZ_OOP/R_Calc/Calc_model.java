@@ -1,5 +1,5 @@
-package DZ_OOP.Calc;
+package DZ_OOP.R_Calc;
 
 public abstract class Calc_model implements Model{
-    int x,y;
+    double x,y;
 }
