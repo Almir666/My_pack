@@ -18,5 +18,4 @@ class Search {
         }
         return result;
     }
-
 }

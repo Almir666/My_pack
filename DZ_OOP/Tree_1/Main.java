@@ -1,5 +1,7 @@
 package DZ_OOP.Tree_1;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         var sveta = new Person<Integer>("Svetlana", 1);
@@ -15,12 +17,22 @@ public class Main {
         gt.append(sveta, Human.link.sister, Human.link.brother, serg);
         gt.append(sveta, Human.link.sister, Human.link.sister, eva);
 
-        System.out.println();
-        System.out.println("Тут мы ищем всех сестер Светланы:");
-        System.out.println(new Search(gt).spend(sveta, Human.link.brother));
-        System.out.println();
-        System.out.println("Тут мы ищем всех детей светланы");
-        System.out.println(new Search(gt).spend(sveta, Human.link.child));
+        ArrayList<Person> list = new ArrayList<>();
 
+        list.add(sveta);
+        list.add(artem);
+        list.add(sasha);
+        list.add(eva);
+        list.add(serg);
+
+        App s = new App();
+        s.start(list);
+
+        // System.out.println();
+        // System.out.println("Тут мы ищем всех сестер Светланы:");
+        // System.out.println(new Search(gt).spend(sveta, Human.link.brother));
+        // System.out.println();
+        // System.out.println("Тут мы ищем всех детей светланы");
+        // System.out.println(new Search(gt).spend(sveta, Human.link.child));
     }
 }

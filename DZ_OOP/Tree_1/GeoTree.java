@@ -14,3 +14,4 @@ class GeoTree implements Tree {
         tree.add(new Node(p2, v2, p1));
     }
 }
+
