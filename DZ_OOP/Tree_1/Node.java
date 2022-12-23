@@ -1,11 +1,11 @@
 package DZ_OOP.Tree_1;
 
-public class Node {
-    Person p1;
-    Person p2;
+public class Node<E> {
+    E p1;
+    E p2;
     Human.link re;
 
-    public Node(Person p1, Human.link re, Person p2) {
+    public Node(E p1, Human.link re, E p2) {
         this.re = re;
         this.p1 = p1;
         this.p2 = p2;

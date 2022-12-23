@@ -11,13 +11,7 @@ public class R_div_model extends Calc_model{
     }
     @Override
     public double result() {
-        double result = -1.1;
-        try {
-            result = x / y;
-        } catch(ArithmeticException e){
-            System.out.println("на ноль делить нельзя");
-        }
-        return result;
+        return x / y;
     }
 }
 

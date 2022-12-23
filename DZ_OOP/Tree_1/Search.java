@@ -9,8 +9,8 @@ class Search {
         tree = pd.getData();
     }
 
-    public ArrayList<Person> spend(Human p, Human.link re) {
-        var result = new ArrayList<Person>();
+    public ArrayList<E> spend(Human p, Human.link re) {
+        var result = new ArrayList<E>();
         for (Node t : tree) {
             if (t.p2.getName() == p.getName() && t.re == re) {
                 result.add(t.p1);
