@@ -1,8 +1,8 @@
 package DZ_OOP.Calc;
 
-public abstract interface Model {
-    int result();
+public abstract interface Model<T extends Number> {
+    T result();
 
-    void setX(int value);
-    void setY(int value);
+    void setX(T value);
+    void setY(T value);
 }
