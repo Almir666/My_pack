@@ -1,4 +1,4 @@
-package test.Exeption.Dz;
+package test.Exeption.Dz.one;
 
 import javax.management.RuntimeErrorException;
 
