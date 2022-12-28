@@ -14,9 +14,9 @@ public class App {
         this.mult = mult;
         this.div = div;
     }
-        
+
     public void start(Presenter sum, Presenter sub, Presenter mult, Presenter div) {
-        try (Scanner in = new Scanner(System.in)) {
+        Scanner in = new Scanner(System.in); 
             while (true) {
                 System.out.println("Знак: '+' '-' '*' '/'");
                 String key = in.next();
@@ -41,4 +41,4 @@ public class App {
             }
         }
     }
-}
+
