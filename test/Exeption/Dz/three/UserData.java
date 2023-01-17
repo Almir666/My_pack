@@ -3,20 +3,20 @@ package test.Exeption.Dz.three;
 import java.util.Arrays;
 
 public class UserData {
-    String[] Data;
+    String[] data;
 
     public String getUserInfobyIndex(int index) {
-        return Data[index];
+        return data[index];
     }
     public String[] getData() {
-        return Data;
+        return data;
     }
     public void splitString(String info) {
-        Data = info.split(" ");
+        data = info.split(" ");
     }
 
     @Override
     public String toString() {
-        return Arrays.toString(Data);
+        return Arrays.toString(data);
     }
 }

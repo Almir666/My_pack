@@ -1,6 +1,6 @@
 package test.Exeption.Dz.three;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.Scanner;
 
@@ -27,8 +27,7 @@ public class InputData {
             System.out.println("Введите строку в формате: \n" +
                     "\"Фамилия Имя Отчество дата рождения номер телефона пол \": ");
             in = new Scanner(System.in);
-            String info = in.nextLine();
-            userdata.splitString(info);
+            userdata.splitString(in.nextLine());
 
             if (wrongSize.countSize(userdata.getData())) {
                 System.out.println("Вы ввели не верное колличество данных");
@@ -37,11 +36,7 @@ public class InputData {
                     dateEx.checkDate(userdata.getUserInfobyIndex(3));
                     num.checkNumber(userdata.getUserInfobyIndex(4));
                     gen.checkMale(userdata.getUserInfobyIndex(5));
-                    try {
-                        save.SaveData(info, userdata.getUserInfobyIndex(0));
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    }
+                    save.SaveData(userdata);
                     return;
                 } catch (ParseException e) {
                     System.out.println("Введите корректную дату");
@@ -49,6 +44,8 @@ public class InputData {
                     System.out.println("Введите номер без знаков");
                 } catch (GenderException e) {
                     System.out.println("Вы не верно выбрали пол");
+                }catch (IOException ex) {
+                    System.out.println("Ошибка! Не могу записать в файл " + ex.getStackTrace());
                 }
             }
         }
